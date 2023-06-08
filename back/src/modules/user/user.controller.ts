@@ -11,6 +11,11 @@ export class UserController {
     return this.userService.createUser();
   }
 
+  @Get('/birthday')
+  async getBirthday(): Promise<User[]> {
+    return this.userService.getBirthday();
+  }
+
   @Get(':id')
   async getUserById(@Param('id') id: number): Promise<User | undefined> {
     return this.userService.getUserById(id);
