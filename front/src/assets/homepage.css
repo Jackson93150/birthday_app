@@ -1,17 +1,39 @@
+.HomePage{
+    display: flex;
+}
+
 .section--left{
     height: 100vh;
     width: 50vw;
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: #DF80AC;
+}
+
+.circleContainer{
+    height: 70vh;
+    width: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
 }
 
 h1 {
     position: absolute;
     bottom: 0;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.avatar_config_homepage{
-    height: 90vh;
-    width: 50%;
+.section--right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    background-color: white;
 }

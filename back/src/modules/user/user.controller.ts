@@ -12,7 +12,7 @@ export class UserController {
   }
 
   @Get('/birthday')
-  async getBirthday(): Promise<User[]> {
+  async getBirthday(): Promise<User[] | undefined> {
     return this.userService.getBirthday();
   }
 

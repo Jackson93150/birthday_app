@@ -10,16 +10,16 @@
   position: absolute;
 }
 .stars1 {
-  top: 15%;
+  top: 5%;
   left: 15%;
 }
 .stars2 {
-  bottom: 20%;
+  bottom: 0;
   left: 20%;
 }
 .stars3 {
   top: 30%;
-  right: 18%;
+  right: 0;
 }
 .active{
   opacity: 1;
@@ -31,31 +31,31 @@
     transform: rotate(0deg) scale(1);
   }
   10% {
-    transform: scale(0.2) rotate(36deg);
+    transform: scale(0.5) rotate(36deg);
   }
   20% {
     transform: scale(1) rotate(72deg);
   }
   30% {
-    transform: scale(0.2) rotate(108deg);
+    transform: scale(0.5) rotate(108deg);
   }
   40% {
     transform: scale(1) rotate(144deg);
   }
   50% {
-    transform: scale(0.2) rotate(180deg);
+    transform: scale(0.5) rotate(180deg);
   }
   60% {
     transform: scale(1) rotate(216deg);
   }
   70% {
-    transform: scale(0.2) rotate(252deg);
+    transform: scale(0.5) rotate(252deg);
   }
   80% {
     transform: scale(1) rotate(288deg);
   }
   90% {
-    transform: scale(0.2) rotate(324deg);
+    transform: scale(0.5) rotate(324deg);
   }
   100% {
     transform: rotate(360deg) scale(1);

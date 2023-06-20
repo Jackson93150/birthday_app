@@ -1,11 +1,10 @@
 .circle {
-  margin-top: 15%;
   position: relative;
-  width: 50%;
+  width: 80%;
   height: fit-content;
 }
 
-.circle img {
+.circleImg {
   animation: rotate 20s linear infinite;
   background-color: #df80ac;
   border-radius: 50%;

@@ -41,7 +41,7 @@ export class UserService {
         birthday: birthday,
         email: email,
       };
-
+      console.log(user);
       this.userRepository.save(user);
     }
   }
@@ -50,7 +50,7 @@ export class UserService {
     return this.userRepository.findOne({ where: { id_birthday } });
   }
 
-  async getBirthday(): Promise<User[]> {
+  async getBirthday(): Promise<User[] | undefined> {
     try {
       const today = new Date();
       const month = today.getMonth() + 1;
@@ -77,6 +77,7 @@ export class UserService {
   @Cron('0 0 * * *')
   async sendMail(): Promise<void> {
     try {
+      await this.createUser();
       sendgridMail.setApiKey(process.env.SENDGRID_API_KEY);
       const users = await this.getBirthday();
       if (users.length > 0) {
