@@ -1,16 +1,17 @@
 .circle {
-width: 40vh;
-position: relative;
+  margin-top: 15%;
+  position: relative;
+  width: 50%;
+  height: fit-content;
 }
 
 .circle img {
-    animation: rotate 20s linear infinite;
-    background-color: #DF80AC;
-    border-radius: 50%;
-    width: 100%;
-    
-    }
-.blackBack{
+  animation: rotate 20s linear infinite;
+  background-color: #df80ac;
+  border-radius: 50%;
+  width: 100%;
+}
+.blackBack {
   right: 6px;
   border-radius: 50%;
   width: 100%;
@@ -19,14 +20,12 @@ position: relative;
   position: absolute;
   top: 8px;
 }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  
+  to {
+    transform: rotate(360deg);
+  }
+}
