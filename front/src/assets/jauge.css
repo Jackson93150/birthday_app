@@ -1,0 +1,49 @@
+.jauge{
+    margin-top: 10px;
+}
+
+.jauge {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+  
+  .jauge-fond {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #DF80AC;
+
+  }
+  
+  .jauge-remplissage {
+    border-radius: 10px;
+
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  .coeur{
+    background-color: #DF80AC;
+    width: 20%;
+  }
+  .crayon{
+    background-color: #DF80AC;
+    width: 40%;
+  }
+  .oeuf{
+    background-color: #DF80AC;
+    width: 60%;
+  }
+  .fleur{
+    background-color: #DF80AC;
+    width: 80%;
+    
+  }
+
+  .jauge-s{
+    border: solid 1px black;
+    border-radius: 20px;
+  }
