@@ -1,12 +1,12 @@
-import '../assets/header.css'
-
+import "../assets/avatar.css";
+import "../utils/formater";
+import { formaterDate } from "../utils/formater";
 export default function Header() {
+  const date = new Date();
   return (
     <div className="header">
-        <p>
-          Edit <code>src/header.tsx</code> and save to reload.
-        </p>
+      <div>CITATION ET ANNIVERSAIRES</div>
+      <div>{formaterDate(date)}</div>
     </div>
   );
 }
-
