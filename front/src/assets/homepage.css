@@ -6,9 +6,12 @@
     justify-content: center;
 }
 
-
 h1 {
     position: absolute;
     bottom: 0;
+}
 
+.avatar_config_homepage{
+    height: 90vh;
+    width: 50%;
 }

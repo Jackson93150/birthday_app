@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import CircleImage from "../component/CircleImage";
 import Stars from "../component/Stars";
+import Header from "../component/Header";
+import Avatar from "../component/Avatar";
+import Jauge from "../component/Jauge";
 import "../assets/stars.css";
 import "../assets/homepage.css";
+
 
 function HomePage() {
   const [activeStars1, setActiveStars1] = useState(false);
@@ -12,15 +16,15 @@ function HomePage() {
   useEffect(() => {
     const timeout1 = setTimeout(() => {
       setActiveStars1(true);
-    }, 100); // Ajouter la classe "active" à Stars2 après 0,5 seconde
+    }, 100);
 
     const timeout2 = setTimeout(() => {
       setActiveStars2(true);
-    }, 500); // Ajouter la classe "active" à Stars2 après 0,5 seconde
+    }, 500);
 
     const timeout3 = setTimeout(() => {
       setActiveStars3(true);
-    }, 1200); // Ajouter la classe "active" à Stars3 après 1 seconde
+    }, 1200);
 
     return () => {
       clearTimeout(timeout1);
@@ -31,7 +35,11 @@ function HomePage() {
 
   return (
     <div className="HomePage">
-      {/* <Header /> */}
+      <Header />
+      <div className="avatar_config_homepage">
+        <Avatar />
+        <Jauge />
+      </div>
       <section className="section--left">
         <CircleImage />
         {activeStars1 && (
